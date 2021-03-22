@@ -1,5 +1,5 @@
 
-!streamlit run app.py &>/dev/null&
+streamlit run app.py &>/dev/null&
 
 from pyngrok import ngrok
  

@@ -3,3 +3,4 @@ streamlit
 streamlit_ace
 pandas
 sklearn
+pickle-mixin
