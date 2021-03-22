@@ -1,0 +1,5 @@
+pyngrok
+streamlit
+streamlit_ace
+pandas
+sklearn
