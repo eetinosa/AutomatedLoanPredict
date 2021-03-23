@@ -9,13 +9,13 @@ Based on the details provided by customers, we have to create a model that can d
 Here are a couple of factors that are helpful with respect to this project:
 
 - Amount of loan: The total amount of loan applied by the customer. 
-- Income of applicant: The income of the applicant (customer) can also be a deciding factor. A higher income will lead to higher probability of loan approval.
+- Income of applicanhttps://github.com/eetinosa/AutomatedLoanPredict/blob/main/data.csvhttps://github.com/eetinosa/AutomatedLoanPredict/blob/main/data.csvt: The income of the applicant (customer) can also be a deciding factor. A higher income will lead to higher probability of loan approval.
 - Education of applicant: Educational qualification of the applicant can also be a vital factor to predict the loan status of a customer. 
 
 
 
 ## Data exploration and pre-processing phase.
-To explore the dataset and pre-process it. Find the dataset [here](https://github.com/eetinosa/AutomatedLoanPredict/blob/main/train_ctrUa4K.csv)The steps taken are as follows:
+To explore the dataset and pre-process it. Find the dataset [here](https://github.com/eetinosa/AutomatedLoanPredict/blob/main/data.csv)The steps taken are as follows:
 
 - Univariate Analysis
 - Bivariate Analysis
