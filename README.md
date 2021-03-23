@@ -27,3 +27,15 @@ Explore the variables individually which is called the univariate analysis. Expl
 
 ##Model building 
 Since it is a classification problem, Any of the classification models like the logistic regression, decision tree, random forest,can be used etc. Here, I used a random forest as the predictive model for this project.
+
+##How to run the model
+On a terminal, run
+
+```bash
+git clone https://github.com/eetinosa/AutomatedLoanPredict
+cd AutomatedLoanPredict/
+code .
+source loan/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
+```
