@@ -1,12 +1,12 @@
 
-%%writefile app.py
+#%%writefile app.py
  
 import pickle
 import streamlit as st
  
 # loading the trained model
-pickle_in = open('classifier.pkl', 'rb') 
-classifier = pickle.load(pickle_in)
+pickle_in = open('predictor.pkl', 'rb') 
+predictor = pickle.load(pickle_in)
  
 @st.cache()
   
@@ -32,7 +32,7 @@ def prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History):
     LoanAmount = LoanAmount / 1000
  
     # Making predictions 
-    prediction = classifier.predict( 
+    prediction = predictor.predict( 
         [[Gender, Married, ApplicantIncome, LoanAmount, Credit_History]])
      
     if prediction == 0:
@@ -47,7 +47,7 @@ def main():
     # front end elements of the web page 
     html_temp = """ 
     <div style ="background-color:yellow;padding:13px"> 
-    <h1 style ="color:black;text-align:center;">Automated Loan Prediction App</h1> 
+    <h1 style ="color:black;text-align:center;">Automated Loan Prediction </h1> 
     </div> 
     """
       
@@ -67,6 +67,6 @@ def main():
         result = prediction(Gender, Married, ApplicantIncome, LoanAmount, Credit_History) 
         st.success('Your loan is {}'.format(result))
         print(LoanAmount)
-     
+              
 if __name__=='__main__': 
     main()
