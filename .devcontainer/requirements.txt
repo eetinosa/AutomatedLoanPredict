@@ -1,0 +1,7 @@
+pyngrok
+streamlit
+streamlit_ace
+pandas
+sklearn
+pickle-mixin
+category-encoders
