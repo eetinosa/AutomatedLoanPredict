@@ -26,8 +26,18 @@ To explore the dataset and pre-process it. Find the dataset [here](https://githu
 Explore the variables individually which is called the univariate analysis. Exploring the effect of one variable on the other, or exploring two variables at a time is the bivariate analysis. Look for any missing values or outliers that might be present in the dataset and deal with them. And also create new features using the existing features (Encoding) which is referred to as feature engineering. 
 
 ##Model building 
-Since it is a classification problem, Any of the classification models like the logistic regression, decision tree, random forest,can be used etc. Here, I used a random forest as the predictive model for this project.
+It is a classification problem, Any of the classification models like the logistic regression, decision tree, random forest,can be used etc. Here, I used a random forest as the predictive model for this project.
 
+Random forest classifier creates a set of decision trees from randomly selected subset of training set. It then aggregates the votes from different decision trees to decide the final class of the test object.
+
+Tuning Parametersused for this model
+
+- n_estimators : Number of trees in forest. Default is 10.
+- max_depth : represents the depth of each tree in the forest. Here I used 5
+- random_state : this is used as a seed to ensure consistency. 
+- min_samples_split: minimum number of working set size at node required to split. Default is 2.
+
+![The Loan PRedictor Webpage](https://github.com/eetinosa/AutomatedLoanPredict/blob/main/Loan%20Predictor.PNG)
 ##How to run the model
 On a terminal, run
 
